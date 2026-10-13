@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
-import { Montserrat } from "next/font/google";
+import { Inter } from "next/font/google";
 
 import "./globals.css";
 
 // Self-hosted at build time, so visitors' browsers never contact Google Fonts.
-const montserrat = Montserrat({
+const inter = Inter({
   subsets: ["latin", "latin-ext"],
 });
 
@@ -15,7 +15,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
-    <html lang="en" className={montserrat.className}>
+    <html lang="en" className={inter.className}>
       <body>{children}</body>
     </html>
   );
