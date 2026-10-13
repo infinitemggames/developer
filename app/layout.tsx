@@ -11,6 +11,10 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "Nemanja Maslaković – Games",
   description: "Nemanja Maslaković, independent game developer and maker of the puzzle game Square That.",
+  // Google Search Console ownership check.
+  verification: {
+    google: "HH7owNGXd80F6UFMNKkEnQn46hHBpTh9F-RCJOoz_P0",
+  },
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
